@@ -1,6 +1,10 @@
 <div class="bloglist">
   <ul>
-  {% for site in collections.sites %}
+    {#
+       Modified to use the _data/multifeeds.json instead
+       of a file-by-file site organization as in the original
+    #}
+  {% for site in multifeeds %}
     {% include "partials/bloglist-item.njk" %}
   {% endfor %}
   </ul>
