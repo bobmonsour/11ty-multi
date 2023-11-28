@@ -116,7 +116,17 @@ module.exports = function (eleventyConfig) {
 
       const sortedItems = allArticles
         .flat()
+        .filter(
+          (item) =>
+            item &&
+            (item.title.includes("11ty") ||
+              item.title.toLowerCase().includes("eleventy"))
+        )
         .sort((a, b) => new Date(b.published) - new Date(a.published));
+
+      // const sortedItems = filteredItems.sort(
+      //   (a, b) => new Date(b.published) - new Date(a.published)
+      // );
 
       return sortedItems;
     } catch (error) {
