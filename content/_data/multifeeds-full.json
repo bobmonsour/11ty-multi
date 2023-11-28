@@ -1,5 +1,23 @@
 [
   {
+    "name": "Jeff Sheets - Uncommented Bytes",
+    "url": "https://sheetsj.com/",
+    "feed": "https://sheetsj.com/feed.xml",
+    "feedType": "text"
+  },
+  {
+    "name": "chriskirknielsen",
+    "url": "https://chriskirknielsen.com",
+    "feed": "https://chriskirknielsen.com/rss.xml",
+    "feedType": "text"
+  },
+  {
+    "name": "Robb Knight",
+    "url": "https://rknight.me",
+    "feed": "https://rknight.me/feed.xml",
+    "feedType": "text"
+  },
+  {
     "name": "Out of the Software Crisis (Newsletter)",
     "url": "https://softwarecrisis.dev/",
     "feed": "https://softwarecrisis.dev/feed.xml",
@@ -538,12 +556,6 @@
     "feedType": "text"
   },
   {
-    "name": "Robb Knight",
-    "url": "https://rknight.me",
-    "feed": "https://rknight.me/feed.xml",
-    "feedType": "text"
-  },
-  {
     "name": "falldowngoboone",
     "url": "https://www.falldowngoboone.com/",
     "feed": "https://www.falldowngoboone.com/feed/feed.xml",
@@ -637,12 +649,6 @@
     "name": "constantvallee.dev",
     "url": "https://constantvallee.dev/",
     "feed": "https://www.constantvallee.dev/feed.xml",
-    "feedType": "text"
-  },
-  {
-    "name": "Jeff Sheets - Uncommented Bytes",
-    "url": "https://sheetsj.com/",
-    "feed": "https://sheetsj.com/feed.xml",
     "feedType": "text"
   },
   {
@@ -870,12 +876,6 @@
     "name": "Remote Synthesis | Blog",
     "url": "https://remotesynthesis.com/",
     "feed": "https://remotesynthesis.com/feed.xml",
-    "feedType": "text"
-  },
-  {
-    "name": "chriskirknielsen",
-    "url": "https://chriskirknielsen.com",
-    "feed": "https://chriskirknielsen.com/rss.xml",
     "feedType": "text"
   },
   {
