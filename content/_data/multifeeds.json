@@ -104,7 +104,7 @@
   {
     "name": "Manuel Matuzović - Web development blog",
     "url": "https://www.matuzo.at",
-    "feed": "https://www.matuzo.at/feed.xml?rev=1674800424909",
+    "feed": "https://www.matuzo.at/feed.xml",
     "feedType": "text"
   },
   {
@@ -505,12 +505,6 @@
     "name": "Kaan's Blog",
     "url": "https://blog.kaan.fyi",
     "feed": "https://blog.kaan.fyi/rss.xml",
-    "feedType": "text"
-  },
-  {
-    "name": "THE Eleventy Meetup",
-    "url": "https://www.youtube.com/channel/UC1QVD9VQPteu0E5Qq5vZAQA",
-    "feed": "https://www.youtube.com/feeds/videos.xml?channel_id=UC1QVD9VQPteu0E5Qq5vZAQA",
     "feedType": "text"
   },
   {
@@ -1079,12 +1073,6 @@
     "name": "Tom's Journal - ttntm.me",
     "url": "https://ttntm.me",
     "feed": "https://ttntm.me/feed.xml",
-    "feedType": "text"
-  },
-  {
-    "name": "For The Record",
-    "url": "https://blog.airtable.com/",
-    "feed": "https://blog.airtable.com/rss/",
     "feedType": "text"
   },
   {

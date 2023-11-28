@@ -1,14 +1,12 @@
+const siteFeeds = require("./content/_data/multifeeds.json");
 const EleventyFetch = require("@11ty/eleventy-fetch");
 const feedExtractor = import("@extractus/feed-extractor");
 const faviconsPlugin = require("eleventy-plugin-gen-favicons");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
-const cacheAvatar = require("./_11ty/helpers/cacheAvatar");
 const addHash = require("./_11ty/helpers/addHash");
 const getFulfilledValues = require("./_11ty/helpers/getFulfilledValues");
 const readableDate = require("./_11ty/helpers/readableDate");
-const minifyHTML = require("./_11ty/helpers/minifyHTML");
 const siteConfig = require("./content/_data/siteConfig");
-const minifyXML = require("./_11ty/helpers/minifyXML");
 const stripAndTruncateHTML = require("./_11ty/helpers/stripAndTruncateHTML");
 
 module.exports = function (eleventyConfig) {
@@ -40,15 +38,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addCollection("articles", async function (collectionApi) {
     try {
       const extractor = await feedExtractor;
-      const blogs = collectionApi
-        .getFilteredByTag("site")
-        .filter((item) => !item.data.disabled);
-
+      const blogs = siteFeeds;
       const allSiteFeeds = blogs.map(async (blog) => {
         try {
-          const { data } = blog;
-          const { name, url, avatar, feed, feedType } = data;
-
+          const { name, url, feed, feedType } = blog;
           const feedData = await EleventyFetch(feed, {
             duration: siteConfig.localCacheDuration,
             type: feedType === "json" ? "json" : "text",
@@ -107,7 +100,6 @@ module.exports = function (eleventyConfig) {
           return feedContent.entries
             .map((entry) => ({
               ...entry,
-              avatar,
               author: {
                 name,
                 url,
@@ -133,27 +125,6 @@ module.exports = function (eleventyConfig) {
     }
   });
 
-  eleventyConfig.addCollection("sites", async function (collectionApi) {
-    const sites = collectionApi
-      .getFilteredByTag("site")
-      .filter((item) => !item.data.disabled)
-      .slice()
-      .sort((a, b) => a.data.name.localeCompare(b.data.name));
-
-    const sitesWithCachedAvatars = await Promise.all(
-      sites.map(async (site) => {
-        const cachedAvatar = await cacheAvatar({
-          url: site.data.avatar,
-          name: site.data.name,
-        });
-        site.data.avatar = cachedAvatar;
-        return site;
-      })
-    );
-
-    return sitesWithCachedAvatars;
-  });
-
   // --- Plugins
 
   eleventyConfig.addPlugin(faviconsPlugin, {
@@ -172,11 +143,6 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addPlugin(pluginRss);
-
-  // --- Transforms
-
-  eleventyConfig.addTransform("minifyHTML", minifyHTML);
-  eleventyConfig.addTransform("minifyXML", minifyXML);
 
   return {
     dir: {
