@@ -53,30 +53,30 @@ module.exports = function (eleventyConfig) {
             },
           });
 
-          const extractOptions = {
-            getExtraEntryFields: (item) => {
-              try {
-                if (item.content["#text"]?.length > 0) {
-                  const htmlDescription = stripAndTruncateHTML(
-                    item.content["#text"],
-                    siteConfig.maxPostLength
-                  );
+          const extractOptions = {};
+          //   getExtraEntryFields: (item) => {
+          //     try {
+          //       if (item.content["#text"]?.length > 0) {
+          //         const htmlDescription = stripAndTruncateHTML(
+          //           item.content["#text"],
+          //           siteConfig.maxPostLength
+          //         );
 
-                  return {
-                    htmlDescription,
-                  };
-                } else {
-                  return {
-                    htmlDescription: "",
-                  };
-                }
-              } catch (error) {
-                return {
-                  htmlDescription: "",
-                };
-              }
-            },
-          };
+          //         return {
+          //           htmlDescription,
+          //         };
+          //       } else {
+          //         return {
+          //           htmlDescription: "",
+          //         };
+          //       }
+          //     } catch (error) {
+          //       return {
+          //         htmlDescription: "",
+          //       };
+          //     }
+          //   },
+          // };
 
           const parsedFeedData =
             feedType === "json" && typeof feedData === "string"
@@ -123,10 +123,6 @@ module.exports = function (eleventyConfig) {
               item.title.toLowerCase().includes("eleventy"))
         )
         .sort((a, b) => new Date(b.published) - new Date(a.published));
-
-      // const sortedItems = filteredItems.sort(
-      //   (a, b) => new Date(b.published) - new Date(a.published)
-      // );
 
       return sortedItems;
     } catch (error) {

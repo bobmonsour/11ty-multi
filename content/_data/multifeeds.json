@@ -6,9 +6,20 @@
     "feedType": "text"
   },
   {
-    "name": "chriskirknielsen",
-    "url": "https://chriskirknielsen.com",
-    "feed": "https://chriskirknielsen.com/rss.xml",
+    "name": "localghost",
+    "url": "https://localghost.dev/",
+    "feed": "https://localghost.dev/feed.xml",
+    "feedType": "text"
+  },
+  {
+    "name": "Grigor's webpage",
+    "url": "https://grgml.xyz/",
+    "feed": "https://grgml.xyz/feed.xml",
+    "feedType": "text"
+  },
+  {
+    "name": "Bob Monsour | Home",
+    "feed": "https://www.bobmonsour.com/feed.xml",
     "feedType": "text"
   },
   {
