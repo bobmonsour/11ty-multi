@@ -12,6 +12,12 @@
     "feedType": "text"
   },
   {
+    "name": "Den McHenry",
+    "url": "https://denmchenry.com/",
+    "feed": "https://denmchenry.com/feed/feed.json",
+    "feedType": "json"
+  },
+  {
     "name": "Grigor's webpage",
     "url": "https://grgml.xyz/",
     "feed": "https://grgml.xyz/feed.xml",

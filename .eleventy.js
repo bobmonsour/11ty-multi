@@ -53,31 +53,31 @@ module.exports = function (eleventyConfig) {
             },
           });
 
-          const extractOptions = {};
-          //   getExtraEntryFields: (item) => {
-          //     try {
-          //       if (item.content["#text"]?.length > 0) {
-          //         const htmlDescription = stripAndTruncateHTML(
-          //           item.content["#text"],
-          //           siteConfig.maxPostLength
-          //         );
+          const extractOptions = {
+            getExtraEntryFields: (item) => {
+              try {
+                if (item.content["#text"]?.length > 0) {
+                  const htmlDescription = stripAndTruncateHTML(
+                    item.content["#text"],
+                    siteConfig.maxPostLength
+                  );
 
-          //         return {
-          //           htmlDescription,
-          //         };
-          //       } else {
-          //         return {
-          //           htmlDescription: "",
-          //         };
-          //       }
-          //     } catch (error) {
-          //       return {
-          //         htmlDescription: "",
-          //       };
-          //     }
-          //   },
-          // };
-
+                  return {
+                    htmlDescription,
+                  };
+                } else {
+                  return {
+                    htmlDescription: "",
+                  };
+                }
+              } catch (error) {
+                return {
+                  htmlDescription: "",
+                };
+              }
+            },
+          };
+          console.log("typeOf feedData: " + typeof feedData);
           const parsedFeedData =
             feedType === "json" && typeof feedData === "string"
               ? JSON.parse(feedData)
@@ -97,16 +97,19 @@ module.exports = function (eleventyConfig) {
                 }
               : extractor.extractFromXml(feedData, extractOptions);
 
-          return feedContent.entries
-            .map((entry) => ({
-              ...entry,
-              author: {
-                name,
-                url,
-              },
-            }))
-            .sort((a, b) => new Date(b.published) - new Date(a.published))
-            .slice(0, siteConfig.maxItemsPerFeed);
+          // if there are entries, return a sorted array of entries
+          if (feedContent.entries) {
+            return feedContent.entries
+              .map((entry) => ({
+                ...entry,
+                author: {
+                  name,
+                  url,
+                },
+              }))
+              .sort((a, b) => new Date(b.published) - new Date(a.published))
+              .slice(0, siteConfig.maxItemsPerFeed);
+          }
         } catch (error) {
           console.log(error);
         }
