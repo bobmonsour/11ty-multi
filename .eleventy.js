@@ -77,7 +77,7 @@ module.exports = function (eleventyConfig) {
               }
             },
           };
-          console.log("typeOf feedData: " + typeof feedData);
+          // console.log("typeOf feedData: " + typeof feedData);
           const parsedFeedData =
             feedType === "json" && typeof feedData === "string"
               ? JSON.parse(feedData)

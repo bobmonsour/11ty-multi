@@ -24,8 +24,15 @@
     "feedType": "text"
   },
   {
-    "name": "Bob Monsour | Home",
+    "name": "Bob Monsour",
+    "url": "https://www.bobmonsour.com/",
     "feed": "https://www.bobmonsour.com/feed.xml",
+    "feedType": "text"
+  },
+  {
+    "name": "chriskirknielsen",
+    "url": "https://chriskirknielsen.com",
+    "feed": "https://chriskirknielsen.com/rss.xml",
     "feedType": "text"
   },
   {
