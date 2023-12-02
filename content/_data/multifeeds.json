@@ -121,7 +121,7 @@
   {
     "name": "CSS Tip: Learn CSS the easy one",
     "url": "https://css-tip.com/",
-    "feed": "https://t.co/RxffYsXYk5",
+    "feed": "https://css-tip.com/feed/feed.xml",
     "feedType": "text"
   },
   {
@@ -404,12 +404,6 @@
     "name": "David East - Blog",
     "url": "https://davidea.st/",
     "feed": "https://davidea.st/feed/articles.xml",
-    "feedType": "text"
-  },
-  {
-    "name": "Mark Thomas Miller",
-    "url": "https://mtm.dev",
-    "feed": "https://mtm.dev/atom.xml",
     "feedType": "text"
   },
   {
