@@ -19,7 +19,12 @@ canonical: /
 </header>
 
 {% for item in items %}
-  {% set link = item.link %}
+{# in xml feeds the post link is in the link property, in json feeds, it's in the url property #}
+  {% if item.link %}
+    {% set link = item.link %}
+  {% else %}
+    {% set link = item.url %}
+  {% endif %}
   {% set title = item.title %}
   {% set authorUrl = item.author.url %}
   {% set authorName = item.author.name %}

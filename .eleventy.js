@@ -35,16 +35,18 @@ module.exports = function (eleventyConfig) {
 
   // --- Collections
 
-  eleventyConfig.addCollection("articles", async function (collectionApi) {
+  eleventyConfig.addCollection("articles", async function () {
     try {
       const extractor = await feedExtractor;
       const blogs = siteFeeds;
+      // blogs.slice(0, 10).forEach((item) => console.log(item));
       const allSiteFeeds = blogs.map(async (blog) => {
         try {
           const { name, url, feed, feedType } = blog;
+          // console.log("feedType: " + feedType);
           const feedData = await EleventyFetch(feed, {
             duration: siteConfig.localCacheDuration,
-            type: feedType === "json" ? "json" : "text",
+            type: feedType,
             verbose: process.env.ELEVENTY_ENV === "development",
             fetchOptions: {
               headers: {
@@ -77,25 +79,39 @@ module.exports = function (eleventyConfig) {
               }
             },
           };
-          // console.log("typeOf feedData: " + typeof feedData);
+
           const parsedFeedData =
             feedType === "json" && typeof feedData === "string"
               ? JSON.parse(feedData)
               : feedData;
 
-          const feedContent =
-            feedType === "json"
-              ? {
-                  entries: parsedFeedData.items.map((item) => ({
-                    ...item,
-                    published: item.date_published,
-                    description: stripAndTruncateHTML(
-                      item.content_html,
-                      siteConfig.maxPostLength
-                    ),
-                  })),
-                }
-              : extractor.extractFromXml(feedData, extractOptions);
+          let feedContent = "";
+          if (feedType === "json") {
+            // console.log("feedType: " + feedType);
+            // console.log("url: " + url);
+            feedContent = {
+              entries: parsedFeedData.items.map((item) => ({
+                ...item,
+                published: item.date_published,
+                description: stripAndTruncateHTML(
+                  item.content_html,
+                  siteConfig.maxPostLength
+                ),
+              })),
+            };
+          } else {
+            try {
+              feedContent = await extractor.extractFromXml(
+                feedData,
+                extractOptions
+              );
+            } catch (error) {
+              console.log(error);
+              console.log(
+                "\nfeedType: " + feedType + ", feed url: " + feed + "\n"
+              );
+            }
+          }
 
           // if there are entries, return a sorted array of entries
           if (feedContent.entries) {

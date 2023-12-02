@@ -1,41 +1,5 @@
 [
   {
-    "name": "Jeff Sheets - Uncommented Bytes",
-    "url": "https://sheetsj.com/",
-    "feed": "https://sheetsj.com/feed.xml",
-    "feedType": "text"
-  },
-  {
-    "name": "chriskirknielsen",
-    "url": "https://chriskirknielsen.com",
-    "feed": "https://chriskirknielsen.com/rss.xml",
-    "feedType": "text"
-  },
-  {
-    "name": "Robb Knight",
-    "url": "https://rknight.me",
-    "feed": "https://rknight.me/feed.xml",
-    "feedType": "text"
-  },
-  {
-    "name": "Out of the Software Crisis (Newsletter)",
-    "url": "https://softwarecrisis.dev/",
-    "feed": "https://softwarecrisis.dev/feed.xml",
-    "feedType": "text"
-  },
-  {
-    "name": "+972 Magazine",
-    "url": "https://www.972mag.com/",
-    "feed": "http://972mag.com/feed",
-    "feedType": "text"
-  },
-  {
-    "name": "Julia Evans",
-    "url": "http://jvns.ca",
-    "feed": "http://jvns.ca/atom.xml",
-    "feedType": "text"
-  },
-  {
     "name": "Jim Nielsen’s Blog",
     "url": "https://blog.jim-nielsen.com",
     "feed": "https://blog.jim-nielsen.com/feed.xml",
@@ -122,7 +86,7 @@
   {
     "name": "Manuel Matuzović - Web development blog",
     "url": "https://www.matuzo.at",
-    "feed": "https://www.matuzo.at/feed.xml",
+    "feed": "https://www.matuzo.at/feed.xml?rev=1674800424909",
     "feedType": "text"
   },
   {
@@ -318,6 +282,7 @@
   },
   {
     "name": "Bob Monsour | Home",
+    "url": "https://www.bobmonsour.com",
     "feed": "https://www.bobmonsour.com/feed.xml",
     "feedType": "text"
   },
@@ -442,6 +407,12 @@
     "feedType": "text"
   },
   {
+    "name": "Mark Thomas Miller",
+    "url": "https://mtm.dev",
+    "feed": "https://mtm.dev/atom.xml",
+    "feedType": "text"
+  },
+  {
     "name": "Eleventy 🎈 v2.0.1",
     "url": "https://fosstodon.org/@eleventy",
     "feed": "https://fosstodon.org/@eleventy.rss",
@@ -520,16 +491,22 @@
     "feedType": "text"
   },
   {
+    "name": "kokitree’s Blog",
+    "url": "https://kokitree.com/",
+    "feed": "https://kokitree.com/rss.xml",
+    "feedType": "text"
+  },
+  {
     "name": "Kaan's Blog",
     "url": "https://blog.kaan.fyi",
     "feed": "https://blog.kaan.fyi/rss.xml",
     "feedType": "text"
   },
   {
-    "name": "Aaron Gustafson:",
-    "url": "https://www.aaron-gustafson.com",
-    "feed": "https://www.aaron-gustafson.com/feeds/all.json",
-    "feedType": "json"
+    "name": "THE Eleventy Meetup",
+    "url": "https://www.youtube.com/channel/UC1QVD9VQPteu0E5Qq5vZAQA",
+    "feed": "https://www.youtube.com/feeds/videos.xml?channel_id=UC1QVD9VQPteu0E5Qq5vZAQA",
+    "feedType": "text"
   },
   {
     "name": "Blog - Thoughts, Code and more - Juan Fernandes - Frontend Developer",
@@ -553,6 +530,12 @@
     "name": "Trys Mudford's Blog",
     "url": "https://www.trysmudford.com/blog/",
     "feed": "https://www.trysmudford.com/blog/index.xml",
+    "feedType": "text"
+  },
+  {
+    "name": "Robb Knight",
+    "url": "https://rknight.me",
+    "feed": "https://rknight.me/feed.xml",
     "feedType": "text"
   },
   {
@@ -586,9 +569,9 @@
     "feedType": "text"
   },
   {
-    "name": "kokitree",
-    "url": "http://localhost:2368/",
-    "feed": "https://kokitree.com/rss.xml",
+    "name": "Adrian Lorenzana :logo:",
+    "url": "https://lorenzana.social/@adrian",
+    "feed": "https://lorenzana.social/@adrian.rss",
     "feedType": "text"
   },
   {
@@ -649,6 +632,12 @@
     "name": "constantvallee.dev",
     "url": "https://constantvallee.dev/",
     "feed": "https://www.constantvallee.dev/feed.xml",
+    "feedType": "text"
+  },
+  {
+    "name": "Jeff Sheets - Uncommented Bytes",
+    "url": "https://sheetsj.com/",
+    "feed": "https://sheetsj.com/feed.xml",
     "feedType": "text"
   },
   {
@@ -767,8 +756,8 @@
   },
   {
     "name": "The Eleventy Firehose",
-    "url": "https://www.11ty.dev/firehose/",
-    "feed": "https://www.11ty.dev/firehose/firehose.xml",
+    "url": "https://www.11ty.dev/firehose/firehose.rss",
+    "feed": "https://www.11ty.dev/firehose/firehose.rss",
     "feedType": "text"
   },
   {
@@ -819,6 +808,12 @@
     "feedType": "text"
   },
   {
+    "name": "Articles by DRyan",
+    "url": "https://dryan.com/",
+    "feed": "https://dryan.com/articles.xml",
+    "feedType": "text"
+  },
+  {
     "name": "Philip Renich | Blog",
     "url": "https://philiprenich.com/",
     "feed": "https://www.philiprenich.com/atom.xml",
@@ -834,6 +829,12 @@
     "name": "Clayton Errington",
     "url": "https://claytonerrington.com/",
     "feed": "https://claytonerrington.com/feed.xml",
+    "feedType": "text"
+  },
+  {
+    "name": "Aaron Gustafson: Latest Posts & Links",
+    "url": "https://www.aaron-gustafson.com",
+    "feed": "https://www.aaron-gustafson.com/feeds/all.xml",
     "feedType": "text"
   },
   {
@@ -876,6 +877,12 @@
     "name": "Remote Synthesis | Blog",
     "url": "https://remotesynthesis.com/",
     "feed": "https://remotesynthesis.com/feed.xml",
+    "feedType": "text"
+  },
+  {
+    "name": "chriskirknielsen",
+    "url": "https://chriskirknielsen.com",
+    "feed": "https://chriskirknielsen.com/rss.xml",
     "feedType": "text"
   },
   {
@@ -958,7 +965,7 @@
   },
   {
     "name": "Offbeat Bits",
-    "url": "https://offbeatbits.com/",
+    "url": "https://blog.lukaszwojcik.net/",
     "feed": "https://offbeatbits.com/excerpts.xml",
     "feedType": "text"
   },
@@ -1073,6 +1080,12 @@
     "name": "Tom's Journal - ttntm.me",
     "url": "https://ttntm.me",
     "feed": "https://ttntm.me/feed.xml",
+    "feedType": "text"
+  },
+  {
+    "name": "For The Record",
+    "url": "https://blog.airtable.com/",
+    "feed": "https://blog.airtable.com/rss/",
     "feedType": "text"
   },
   {

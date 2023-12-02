@@ -6,6 +6,36 @@
     "feedType": "text"
   },
   {
+    "name": "localghost",
+    "url": "https://localghost.dev/",
+    "feed": "https://localghost.dev/feed.xml",
+    "feedType": "text"
+  },
+  {
+    "name": "Ginger in blog format",
+    "url": "https://ginger.wtf/",
+    "feed": "https://ginger.wtf/feed.xml",
+    "feedType": "text"
+  },
+  {
+    "name": "Den McHenry",
+    "url": "https://denmchenry.com/",
+    "feed": "https://denmchenry.com/feed/feed.json",
+    "feedType": "json"
+  },
+  {
+    "name": "Grigor's webpage",
+    "url": "https://grgml.xyz/",
+    "feed": "https://grgml.xyz/feed.xml",
+    "feedType": "text"
+  },
+  {
+    "name": "Bob Monsour",
+    "url": "https://www.bobmonsour.com/",
+    "feed": "https://www.bobmonsour.com/feed.xml",
+    "feedType": "text"
+  },
+  {
     "name": "chriskirknielsen",
     "url": "https://chriskirknielsen.com",
     "feed": "https://chriskirknielsen.com/rss.xml",
