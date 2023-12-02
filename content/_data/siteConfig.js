@@ -4,7 +4,7 @@ module.exports = {
   title: "Multiplicity",
   description: "Eleventy-based RSS aggregator template",
   author: "Multiple Authors",
-  url: "m10y-https://11tymulti.netlify.app/",
+  url: "m10y-https://11ty-multi.netlify.app/",
   github: {
     project: "https://github.com/lwojcik/eleventy-template-m10y",
   },
