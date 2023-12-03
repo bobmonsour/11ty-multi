@@ -1,15 +1,14 @@
 const packageJson = require("../../package.json");
 
 module.exports = {
-  title: "Multiplicity",
-  description: "Eleventy-based RSS aggregator template",
+  title: "11ty Multi",
+  description: "Eleventy-based RSS aggregator for 11Bundle.dev",
   author: "Multiple Authors",
-  url: "m10y-https://11ty-multi.netlify.app/",
+  url: "https://11ty-multi.netlify.app/",
   github: {
-    project: "https://github.com/lwojcik/eleventy-template-m10y",
+    project: "https://github.com/bobmonsour/11ty-multi",
   },
-  userAgent:
-    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
+  userAgent: "m10y-https://11ty-multi.netlify.app/",
   language: "en",
   generator: {
     name: "Eleventy",
