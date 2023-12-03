@@ -1,172 +1,5 @@
 [
   {
-    "name": "Jim Nielsen’s Blog",
-    "url": "https://blog.jim-nielsen.com",
-    "feed": "https://blog.jim-nielsen.com/feed.xml",
-    "feedType": "text"
-  },
-  {
-    "name": "Melanie Richards",
-    "url": "https://melanie-richards.com/",
-    "feed": "https://melanie-richards.com/feed.xml",
-    "feedType": "text"
-  },
-  {
-    "name": "Little Design Tips – Set Studio",
-    "url": "https://set.studio",
-    "feed": "https://set.studio/category/little-design-tips/feed/",
-    "feedType": "text"
-  },
-  {
-    "name": "Ana Rodrigues",
-    "url": "https://ohhelloana.blog",
-    "feed": "https://ohhelloana.blog/feed.xml",
-    "feedType": "text"
-  },
-  {
-    "name": "Modern CSS Solutions",
-    "url": "https://moderncss.dev",
-    "feed": "https://moderncss.dev/feed/",
-    "feedType": "text"
-  },
-  {
-    "name": "Sara Soueidan – Blog",
-    "url": "https://sarasoueidan.com/",
-    "feed": "https://www.sarasoueidan.com/blog/index.xml",
-    "feedType": "text"
-  },
-  {
-    "name": "Adactio: Links",
-    "url": "https://adactio.com/links/",
-    "feed": "http://adactio.com/links/rss",
-    "feedType": "text"
-  },
-  {
-    "name": "Adactio: Journal",
-    "url": "https://adactio.com/journal/",
-    "feed": "https://adactio.com/journal/rss",
-    "feedType": "text"
-  },
-  {
-    "name": "Stephanie Eckles",
-    "url": "https://thinkdobecreate.com",
-    "feed": "https://thinkdobecreate.com/feed/",
-    "feedType": "text"
-  },
-  {
-    "name": "Nicolas Hoizey - Articles",
-    "url": "https://nicolas-hoizey.com/articles/",
-    "feed": "https://nicolas-hoizey.com/feeds/articles.xml",
-    "feedType": "text"
-  },
-  {
-    "name": "Josh Comeau's blog",
-    "url": "https://www.joshwcomeau.com/",
-    "feed": "https://www.joshwcomeau.com/rss.xml",
-    "feedType": "text"
-  },
-  {
-    "name": "Kilian Valkhof",
-    "url": "https://kilianvalkhof.com",
-    "feed": "http://kilianvalkhof.com/feed/",
-    "feedType": "text"
-  },
-  {
-    "name": "Miriam Eric Suzanne",
-    "url": "https://www.miriamsuzanne.com/",
-    "feed": "https://www.miriamsuzanne.com/feed.xml",
-    "feedType": "text"
-  },
-  {
-    "name": "That HTML Blog",
-    "url": "https://thathtml.blog/",
-    "feed": "https://thathtml.blog/feed.xml",
-    "feedType": "text"
-  },
-  {
-    "name": "Manuel Matuzović - Web development blog",
-    "url": "https://www.matuzo.at",
-    "feed": "https://www.matuzo.at/feed.xml?rev=1674800424909",
-    "feedType": "text"
-  },
-  {
-    "name": "OddBird",
-    "url": "https://www.oddbird.net/",
-    "feed": "http://oddbird.net/feed.atom",
-    "feedType": "text"
-  },
-  {
-    "name": "Geoff Graham",
-    "url": "https://geoffgraham.me",
-    "feed": "https://geoffgraham.me/feed/",
-    "feedType": "text"
-  },
-  {
-    "name": "Matthias Ott – User Experience Designer",
-    "feed": "https://matthiasott.com/rss",
-    "feedType": "text"
-  },
-  {
-    "name": "The Index – Set Studio",
-    "url": "https://set.studio",
-    "feed": "https://set.studio/category/newsletter/feed/",
-    "feedType": "text"
-  },
-  {
-    "name": "Lynn Fisher",
-    "url": "https://lynnandtonic.com",
-    "feed": "https://lynnandtonic.com/feed.xml",
-    "feedType": "text"
-  },
-  {
-    "name": "CSS Tip: Learn CSS the easy one",
-    "url": "https://css-tip.com/",
-    "feed": "https://css-tip.com/feed/feed.xml",
-    "feedType": "text"
-  },
-  {
-    "name": "Kevin Pennekamp",
-    "url": "https://crinkles.dev/",
-    "feed": "https://crinkles.dev/feed/feed.xml",
-    "feedType": "text"
-  },
-  {
-    "name": "CSS In Real Life",
-    "url": "https://css-irl.info/",
-    "feed": "https://css-irl.info/rss.xml",
-    "feedType": "text"
-  },
-  {
-    "name": "Ryan Mulligan",
-    "url": "https://ryanmulligan.dev",
-    "feed": "https://ryanmulligan.dev/blog/feed.xml",
-    "feedType": "text"
-  },
-  {
-    "name": "Rach Smith's digital garden",
-    "url": "https://rachsmith.com/",
-    "feed": "https://rachsmith.com/rss/",
-    "feedType": "text"
-  },
-  {
-    "name": "Chris Coyier",
-    "url": "https://chriscoyier.net",
-    "feed": "https://chriscoyier.net/feed/",
-    "feedType": "text"
-  },
-  {
-    "name": "CSS-Tricks",
-    "url": "https://css-tricks.com",
-    "feed": "https://css-tricks.com/feed/",
-    "feedType": "text"
-  },
-  {
-    "name": "Ahmad Shadeed Blog",
-    "url": "https://ishadeed.com/",
-    "feed": "http://ishadeed.com/feed.xml",
-    "feedType": "text"
-  },
-  {
     "name": "wiwi blog",
     "url": "https://whiona.weblog.lol",
     "feed": "https://whiona.weblog.lol/rss.xml",
@@ -557,12 +390,6 @@
     "feedType": "text"
   },
   {
-    "name": "11ty Bundle Blog Feed",
-    "url": "https://www.11tybundle.dev",
-    "feed": "https://11tybundle.dev/feed.xml",
-    "feedType": "text"
-  },
-  {
     "name": "Adrian Lorenzana :logo:",
     "url": "https://lorenzana.social/@adrian",
     "feed": "https://lorenzana.social/@adrian.rss",
@@ -764,6 +591,12 @@
     "name": "Aleksandr Hovhannisyan",
     "url": "https://www.aleksandrhovhannisyan.com/",
     "feed": "https://www.aleksandrhovhannisyan.com/feed.xml",
+    "feedType": "text"
+  },
+  {
+    "name": "ricmac's Eleventy Blog",
+    "url": "https://fedi.ricmac.org/",
+    "feed": "https://fedi.ricmac.org/feed/feed.xml",
     "feedType": "text"
   },
   {
